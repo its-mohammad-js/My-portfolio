@@ -1,4 +1,6 @@
 import useHorizontalTouchScroll from "/src/hooks/useTouchScroll";
+import thumbnail1 from "/src/assets/Slides/project-thumbnail (1).png";
+import thumbnail2 from "/src/assets/Slides/project-thumbnail (2).png";
 
 const projects = [
   {
@@ -6,7 +8,7 @@ const projects = [
     subtitle: "Integration of E-commerce and Social Media",
     url: "https://its-mohammad-js.github.io/EcoVibe/",
     github: "https://github.com/its-mohammad-js/EcoVibe",
-    thumbnail: "/Slides/project-thumbnail (1).png",
+    thumbnail: thumbnail1,
     docs: "https://its-mohammad-js.github.io/eco-vibe-technical-docs/",
   },
   {
@@ -14,7 +16,7 @@ const projects = [
     subtitle: "Crypto App",
     url: "https://its-mohammad-js.github.io/Your-Currency/",
     github: "https://github.com/its-mohammad-js/Your-Currency",
-    thumbnail: "/Slides/project-thumbnail (2).png",
+    thumbnail: thumbnail2,
   },
 ];
 

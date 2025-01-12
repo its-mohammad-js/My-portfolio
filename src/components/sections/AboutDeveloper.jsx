@@ -1,22 +1,26 @@
 import AboutDevCanvas from "../canvas/AboutDevCanvas";
 import { motion } from "framer-motion";
+import slide1 from "/src/assets/Slides/about-slide (1).webp";
+import slide2 from "/src/assets/Slides/about-slide (2).webp";
+import slide3 from "/src/assets/Slides/about-slide (3).webp";
+import personalPic from "/src/assets/Slides/developer-pic.webp";
 
 const slidePositions = [
   {
     style: "w-32 lg:w-72 lg:h-96 left-0",
     opacity: 0,
-    src: "/Slides/about-slide (1).webp",
+    src: slide1,
     y: 50,
   },
   {
     style: "w-28 lg:w-72 lg:h-60 right-32 top-24",
-    src: "/Slides/about-slide (2).webp",
+    src: slide2,
     opacity: 0,
     y: 50,
   },
   {
     style: "w-96 lg:h-96 -bottom-32 right-0",
-    src: "/Slides/about-slide (3).webp",
+    src: slide3,
     opacity: 0,
     y: 50,
   },
@@ -62,7 +66,7 @@ function AboutDeveloper({ currentSlide }) {
           <div className="lg:w-96 lg:h-[28rem] w-80 h-72 bg-gray-600 border-8">
             <div className="w-full h-[85%]">
               <img
-                src="/public/Slides/developer-pic.webp"
+                src={personalPic}
                 alt="developer-pic"
                 className="size-full object-cover"
               />

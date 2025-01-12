@@ -1,29 +1,33 @@
 import CircleCanvas from "../canvas/CricleCanvas";
 import StacksCanvas from "../canvas/StacksCanvas";
 import { motion } from "framer-motion";
+import stack1 from "/src/assets/Slides/stack icon (1).svg";
+import stack2 from "/src/assets/Slides/stack icon (2).svg";
+import stack3 from "/src/assets/Slides/stack icon (3).svg";
+import stack4 from "/src/assets/Slides/stack icon (4).svg";
 
 const slidePositions = [
   {
     style: "size-16 lg:w-44 lg:h-[90%] max-h-80",
     opacity: 0,
-    src: "/Slides/stack icon (1).svg",
+    src: stack1,
     y: 50,
   },
   {
     style: "size-16 lg:w-44 lg:h-[90%] max-h-80",
     opacity: 0,
-    src: "/Slides/stack icon (2).svg",
+    src: stack2,
     y: 50,
   },
   {
     style: "size-16 lg:w-44 lg:h-[90%] max-h-80",
-    src: "/Slides/stack icon (3).svg",
+    src: stack3,
     opacity: 0,
     y: 50,
   },
   {
     style: "size-16 lg:w-44 lg:h-[90%] max-h-80",
-    src: "/Slides/stack icon (4).svg",
+    src: stack4,
     opacity: 0,
     y: 50,
   },
