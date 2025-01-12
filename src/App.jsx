@@ -22,6 +22,7 @@ const comps = [
 ];
 
 function App() {
+  // 
   const isMobile = useMediaQuery({ maxWidth: 720 });
   const [isLocked, setLock] = useState(false);
   const swiperRef = useRef();
