@@ -11,8 +11,8 @@ function Contact() {
           </div>
           way :
         </div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
-        modi earum est ut sint .
+        Feel free to contact me for inquiries or collaboration opportunities.
+        I'll respond as soon as possible:)
       </div>
 
       <div className="w-full h-1/2 rounded-t-xl flex-col gap-16 bg-gray-200/10 flex items-center justify-center">
