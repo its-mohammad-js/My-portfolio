@@ -27,6 +27,7 @@ function App() {
   const swiperRef = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loading, setLoading] = useState(true);
+  const [contextMenu, setMenu] = useState(false);
 
   function onChangeSlide(slideIndex) {
     swiperRef.current.swiper.slideTo(slideIndex);
@@ -67,13 +68,26 @@ function App() {
     };
   }, [isLocked]);
 
+  const handleDownload = () => {
+    // Construct the file URL
+    const fileUrl = "/src/assets/MOHAMMAD ARAB.pdf"; // Path relative to the `public` folder
+
+    // Programmatically create a link and trigger the download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "resume.pdf"; // Set the downloaded file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link); // Clean up the DOM
+  };
+
   return (
     <div className="mx-auto 2xl:max-w-screen-2xl">
       {/* navbar & logo */}
       <div className="fixed w-full z-50 flex items-center px-4 py-2">
         <Logo {...{ loading, onChangeSlide }} />
 
-        <div className="flex z-10 gap-2 overflow-auto ml-12 lg:mx-auto lg:gap-4 items-center p-1">
+        <div className="flex z-10 gap-2 overflow-x-auto ml-12 lg:mx-auto lg:gap-4 items-center p-1">
           {comps.map(
             (slide, index) =>
               index > 0 &&
@@ -92,12 +106,25 @@ function App() {
               )
           )}
           <div
-            className={`text-xs text-nowrap text-gray-200 lg:text-lg font-semibold rounded-2xl lg:px-4 lg:py-2 px-1.5 py-0.5`}
+            className={`text-xs cursor-pointer text-nowrap text-gray-200 lg:text-lg font-semibold rounded-2xl lg:px-4 lg:py-2 px-1.5 py-0.5`}
           >
-            Resume
+            <a href="MOHAMMAD ARAB.pdf" download={true}>
+              Resume
+            </a>
+            {/* <div className="absolute flex flex-col -bottom-[3.5rem] px-2 py-1 rounded-lg text-base bg-gray-200">
+              <button className="px-4 py-1 hover:bg-gray-300/50 text-gray-950">
+                Quick Review
+              </button>
+              <button className="px-4 py-1 hover:bg-gray-300/50 text-gray-950">
+                Download
+              </button>
+            </div> */}
           </div>
           <div
-            className={`text-xs text-nowrap text-gray-200 lg:text-lg font-semibold rounded-2xl lg:px-4 lg:py-2 px-1.5 py-0.5`}
+            onClick={() =>
+              window.open("https://github.com/its-mohammad-js/", "_blank")
+            }
+            className={`text-xs cursor-pointer text-nowrap text-gray-200 lg:text-lg font-semibold rounded-2xl lg:px-4 lg:py-2 px-1.5 py-0.5`}
           >
             github
           </div>
