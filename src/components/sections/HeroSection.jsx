@@ -1,46 +1,53 @@
 import HeroCanvas from "../canvas/HeroCanvas";
 import { motion } from "framer-motion";
+import slide1 from "/src/assets/Slides/hero-slide (1).webp";
+import slide2 from "/src/assets/Slides/hero-slide (2).webp";
+import slide3 from "/src/assets/Slides/hero-slide (3).webp";
+import slide4 from "/src/assets/Slides/hero-slide (4).webp";
+import slide5 from "/src/assets/Slides/hero-slide (5).webp";
+import slide6 from "/src/assets/Slides/hero-slide (6).webp";
+import slide7 from "/src/assets/Slides/hero-slide (7).webp";
 
 const slidePositions = [
   {
     style: "w-32 lg:w-64 h-32 lg:h-56 -top-24 right-0",
-    src: "/src/assets/Slides/hero-slide (1).webp",
+    src: slide1,
     opacity: 0,
     y: -50,
   },
   {
     style: "w-32 lg:w-64 h-32 lg:h-56 top-16 -left-24 lg:right-0",
-    src: "/src/assets/Slides/hero-slide (2).webp",
+    src: slide2,
     opacity: 0,
     y: -50,
   },
   {
     style: "w-56 h-32 top-[55%] lg:h-56 lg:top-1/4 -left-12 lg:left-56",
-    src: "/src/assets/Slides/hero-slide (3).webp",
+    src: slide3,
     opacity: 0,
     y: -50,
   },
   {
     style: "w-32 lg:w-64 h-32 lg:h-56 top-1/4 right-[12%]",
-    src: "/src/assets/Slides/hero-slide (4).webp",
+    src: slide4,
     opacity: 0,
     y: -50,
   },
   {
     style: "w-32 lg:w-64 h-32 lg:h-56 bottom-[5%] left-[2%]",
-    src: "/src/assets/Slides/hero-slide (5).webp",
+    src: slide5,
     opacity: 0,
     y: -50,
   },
   {
     style: "w-64 lg:block hidden h-56 bottom-12",
-    src: "/src/assets/Slides/hero-slide (6).webp",
+    src: slide6,
     opacity: 0,
     y: 50,
   },
   {
     style: "w-64 h-56 bottom-32 -right-32",
-    src: "/src/assets/Slides/hero-slide (7).webp",
+    src: slide7,
     opacity: 0,
     y: -50,
   },
