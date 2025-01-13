@@ -2,7 +2,7 @@
 
 <div align="center">
   <br>
-  <img alt="Open Sauced" src="App thumbnail.webp" width="300px">
+  <img alt="app thumbnail" src="/public/app thumbnail.webp" width="300px">
   <br />
 </div>
 
