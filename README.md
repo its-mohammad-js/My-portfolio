@@ -1,8 +1,11 @@
-# React + Vite
+# My Personal Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <br>
+  <img alt="Open Sauced" src="/public/App thumbnail.webp" width="300px">
+  <br />
+</div>
 
-Currently, two official plugins are available:
+## About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+a creative front-end developer, I am passionate about learning new tools and technologies. I focus on the product development process, ensuring that user-centric solutions are at the heart of every project. With expertise in React, Redux, Firebase, and modern CSS frameworks, my goal is to build intuitive and user-friendly products that provide a seamless experience and meet the needs of the target audience.
