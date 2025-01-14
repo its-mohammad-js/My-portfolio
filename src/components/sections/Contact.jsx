@@ -3,7 +3,7 @@ import InfinityCanvas from "../canvas/InfinityCanvas";
 function Contact() {
   return (
     <div className="size-full flex items-center justify-between flex-col">
-      <div className="w-full h-1/3 px-4 flex justify-center flex-col text-xl lg:text-4xl font-semibold">
+      <div className="w-full h-1/3 px-4 flex justify-center flex-col text-base lg:text-4xl font-semibold">
         <div className="flex items-center">
           Develop every idea in an
           <div className="w-fit h-fit inline-flex items-center justify-center">

@@ -72,8 +72,8 @@ function AboutDeveloper({ currentSlide }) {
               />
             </div>
             <div className="w-full px-4 py-2 h-[16%] bg-gray-200 text-gray-950">
-              <h4 className="text-xl font-bold">
-                MOHAMMAD <br /> ARAB
+              <h4 className="text-lg lg:text-xl font-bold">
+                MOHAMMAD <br className="hidden lg:inline-block" /> ARAB
               </h4>
             </div>
           </div>
